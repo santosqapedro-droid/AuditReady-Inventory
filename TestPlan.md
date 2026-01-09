@@ -40,4 +40,4 @@ The testing activities cover the database schema creation, data insertion, lifec
 - [ ] **TC-07** - (ARI-8)
 
 ## 5. Evidence & Traceability
-All test executions will be evidenced by screenshots of the SQL terminal results and attached to their respective Jira User Stories (ARI-4 to ARI-9) for audit purposes.
+All test executions will be evidenced by screenshots of the SQL terminal results and attached to their respective Jira User Stories (ARI-4 to ARI-9) and the Test Execution Log (Github repository) for audit purposes.
