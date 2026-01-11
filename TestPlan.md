@@ -36,7 +36,7 @@ The testing activities cover the database schema creation, data insertion, lifec
 - [ ] **TC-03** - (ARI-6)
 - [ ] **TC-04** - (ARI-7/9)
 - [X] **TC-05** - (ARI-4)
-- [ ] **TC-06** - (ARI-4)
+- [X] **TC-06** - (ARI-4)
 - [ ] **TC-07** - (ARI-8)
 
 ## 5. Evidence & Traceability
