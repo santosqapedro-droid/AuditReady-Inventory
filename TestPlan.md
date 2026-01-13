@@ -32,7 +32,7 @@ The testing activities cover the database schema creation, data insertion, lifec
 ### 4. Test Execution Status (Tracking)
 
 - [X] **TC-01** - (ARI-4)
-- [ ] **TC-02** - (ARI-5)
+- [X] **TC-02** - (ARI-5)
 - [ ] **TC-03** - (ARI-6)
 - [ ] **TC-04** - (ARI-7/9)
 - [X] **TC-05** - (ARI-4)
