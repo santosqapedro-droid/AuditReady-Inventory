@@ -24,6 +24,42 @@ Verify if the `Software_Inventory` table is created with all mandatory fields an
 PRAGMA table_info('Software_Inventory');
 ```
 
+### [TC-02] Valid Data Entry
+**Status:** ✅ PASSED  
+**Date:** 2026-01-13  
+**Executed by:** @santosqapedro-droid  
+**Environment:** SQLite Online IDE  
+
+---
+
+#### 1. Description
+Insert a realistic GxP record (e.g., SAP, LIMS) with all valid parameters.
+
+#### 2. Test Classification
+* **Type:** Functional / Database Testing.
+* **Method:** Gray Box (Knowledge of schema.sql was used to design the test cases).
+* **Granularity:** Integration Testing (Validating the interaction between the SQL commands and the Database constraints).
+* **Goal:** Smoke Test (To ensure core functionality) and Negative Testing (To verify error handling and Data Integrity).
+
+#### 3. Execution Script
+```sql
+SELECT * FROM Software_Inventory;
+```
+
+```sql
+INSERT INTO Software_Inventory (system_name, system_vendor, system_version, validation_status, gamp_risk, created_by)
+VALUES ('Harro AutoInjector', 'Harro H.', '1.0', 'In validation', '4', 'Pedro A');
+```
+
+```sql
+SELECT * from Software_Inventory WHERE system_name = ‘Harro AutoInjector';
+```
+
+```sql
+INSERT INTO Software_Inventory (system_name, system_vendor, system_version, validation_status, gamp_risk, created_by)
+VALUES ('Harro AutoInjector', 'Harro H.', '1.0', 'Draft', '4', 'Pedro A');
+```
+
 ### [TC-05] GAMP Risk Range Violation
 **Status:** ✅ PASSED  
 **Date:** 2026-01-09  
